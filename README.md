@@ -1,0 +1,2 @@
+# destroyer.github.io
+Blog
