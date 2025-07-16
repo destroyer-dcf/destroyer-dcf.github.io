@@ -1,0 +1,33 @@
+remote_theme: jekyll-theme-plain/jekyll-theme-plain
+
+# lang: en
+# color_scheme: false # disables sync with system theme
+title: Your awesome title
+# url: https://YOURDOMAIN.com
+# basename: 
+# license_url: 
+
+# To use a style sheet, place it in _includes/XXX.css and uncomment the following lines:
+# stylesheets:
+#   - XXX.css
+
+# Page permalinks
+collections:
+  pages:
+    output: true
+    permalink: /:title/
+
+# Post permalinks
+permalink: /:title
+
+# Front matter defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      stylesheets:
+        # - XXX.css
+        - post.css
+      title: "" # sets the URL as the title
