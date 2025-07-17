@@ -11,7 +11,7 @@ permalink:          /:title # Post permalink
 timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
 social_share_previews: true
-
+encoding:           UTF-8
 # Site Build
 highlighter:        rouge
 markdown:           kramdown
