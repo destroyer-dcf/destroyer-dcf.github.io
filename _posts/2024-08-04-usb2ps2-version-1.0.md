@@ -4,29 +4,38 @@ updated: 2025-07-18 20:56
 ---
 
 Esta placa esta diseñada para dar soporte a teclados USB en el emulador [ESPectrum](https://github.com/EremusOne/ESPectrum) creado por [Eremus](https://github.com/EremusOne). El firmware original esta creado por [NoOne](https://github.com/No0ne) para placas de desarrollo Raspberry Pico, yo lo he adaptado para la RP2040 Zero.
-> **Soporte para Teclado USB y PS/222** 
+> **Soporte para Teclado USB y PS/2** 
 
-> **Repositorio:** [https://github.com/destroyer-dcf/usb2ps2](https://github.com/destroyer-dcf/usb2ps2)
-> **Firmware:** [Version 1.0 - usb2ps2.uf2](https://github.com/destroyer-dcf/usb2ps2/releases/download/1.0/usb2ps2.uf2)
-
-<div class="divider"></div>
+<!-- > **Repositorio:** [https://github.com/destroyer-dcf/usb2ps2](https://github.com/destroyer-dcf/usb2ps2)
+> **Firmware:** [Version 1.0 - usb2ps2.uf2](https://github.com/destroyer-dcf/usb2ps2/releases/download/1.0/usb2ps2.uf2) -->
 
 |![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO0.jpg) |![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO1.jpg) |
 |-|-|
 |![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO3.jpg) |![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO4.jpg) |
 
-
-### Circuito
+<div class="divider"></div>
+### Esquema y Circuito
 ![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/circuito.jpg) 
-[Descarga Esquema](docs/Schematic_USB2PS-2_2024-08-20.pdf)
 
 ![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/circuito2.jpg) 
-[Descarga Gerber](https://github.com/destroyer-dcf/usb2ps2/releases/download/1.0/Gerber_USB2PS-2_PCB_USB2PS-2_5_2024-08-10.zip)
+
+<div class="divider"></div>
+### Recursos Necesarios
+
+| Descripción | Recurso|
+|----------|----------|
+| **Código del Proyecto**    | [https://github.com/destroyer-dcf/usb2ps2](https://github.com/destroyer-dcf/usb2ps2)| 
+| **Firmware**    | [Version 1.0 - usb2ps2.uf2](https://github.com/destroyer-dcf/usb2ps2/releases/download/1.0/usb2ps2.uf2)   |
+| **Circuito**    | [PDF](docs/Schematic_USB2PS-2_2024-08-20.pdf)| 
+| **PCB**   | [Archivos Gerber](https://github.com/destroyer-dcf/usb2ps2/releases/download/1.0/Gerber_USB2PS-2_PCB_USB2PS-2_5_2024-08-10.zip) | 
+| **Caja 3D**    | [Archivo STL]( https://www.thingiverse.com/thing:6853001) (opcional)| 
+
+<div class="divider"></div>
 
 ### Componentes
 
 | Cantidad | Componente| Link |
-|----------|----------|----------|
+|:----------:|----------|:-------------:|
 | 1    | RP2040 Zero   | [ver](https://acortar.link/Bv6ozr)  |
 | 1    | Convertidor de nivel logico   | [ver](https://acortar.link/reAbsi)   |
 | 1    | Mini Dim 6p   | [ver](https://acortar.link/yrMd11)    |
@@ -35,18 +44,13 @@ Esta placa esta diseñada para dar soporte a teclados USB en el emulador [ESPect
 | 1    | LED (opcional)| [ver](https://acortar.link/jYP3aA)    |
 | 1    | Adaptador USB-C a USB | [ver](https://es.aliexpress.com/item/1005004621683764.html#nav-specification) |
 
-### Caja
-Si quieres una caja para la placa en este link tienes los [STL]( https://www.thingiverse.com/thing:6853001) del proyecto. GRACIAS a Daniel por el trabajo!!!!!
-![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/thingiverse.jpg) 
-
-
 ### Soldar JST XH2.54 4 pin a Dim 6
 
 
 ![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/dim6.jpg) 
 
 | Pin | Color| Funcion |
-|----------|----------|----------|
+|:-----:|----------|:----------:|
 | 3    | negro   | GND  |
 | 4    | Rojo   | +5V  |
 | 5    | Blanco   | CLOCK   |
@@ -89,15 +93,21 @@ Soldaremos un cable al pin **HV3** y otro al **HV4** y los conectaremos al puert
 
 ![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/mouse_fix_1.jpg)|
 
-### Instalar
-* Descargar  `usb2ps2.uf2` from https://github.com/destroyer-dcf/usb2ps2/releases/tag/1.0
+### Caja
+Si quieres una caja para la placa en este link tienes los [STL]( https://www.thingiverse.com/thing:6853001) del proyecto. GRACIAS a Daniel por el trabajo!!!!!
+![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/thingiverse.jpg) 
+
+
+
+### Instalar Firmware
+* Descargar  `usb2ps2.uf2`
 * Copie `usb2ps2.uf2` a su RP2040 presionando BOOT antes de enchufarlo.
 * Conecta tu teclado al usbc de la placa
 * Si tu teclado es reconocido el led (opcional) se encendera.
 
-### Compilar
+### Compilar Firmware
 
-Para poder compilar es necesario tener descargado el [SDK de raspberry pico](https://github.com/raspberrypi/pico-sdk)
+Si quieres compilar el firmware puedes hacerlo tu mismo. Para ello es necesario tener descargado el [SDK de raspberry pico](https://github.com/raspberrypi/pico-sdk)
 
 Una vez descargado es necesario actualizar la libreria TinyUSB al tag 0.16.0 para ello ..
 
@@ -119,8 +129,7 @@ make
 
 Si lo prefieres puedes ejecutar el script `compile.sh` cambiando la linea  `export PICO_SDK_PATH=~/pico-sdk` por tu path de pico-sdk
 
-### Recursos
-* https://github.com/No0ne/usb2ps2
 
 ### Agradecimientos
-Gracias a NoOne por su ayuda y compartir su trabajo.
+* Gracias a NoOne por su ayuda y compartir su trabajo.
+* Gracias a Eremus por el gran trabajo realizado con el emulador ESPectrum
