@@ -8,7 +8,7 @@ logo_url:           https://avatars0.githubusercontent.com/u/105808314?v=4 # Get
 url:                https://destroyer-dcf.github.io # main url
 baseurl:            
 permalink:          /:title # Post permalink
-timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:           Europe/Madrid # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable
 social_share_previews: true
 encoding:           UTF-8
@@ -25,9 +25,9 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
 plugins:
   - jekyll-sitemap
-  - jekyll-remote-theme
+#   - jekyll-remote-theme
 
-remote_theme: heiswayi/the-plain
+# remote_theme: heiswayi/the-plain
 
 
 defaults:
