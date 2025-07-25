@@ -4,7 +4,7 @@ updated: 2025-07-18 20:56
 ---
 
 Esta placa esta diseñada para dar soporte a teclados USB en el emulador [ESPectrum](https://github.com/EremusOne/ESPectrum) creado por [Eremus](https://github.com/EremusOne). El firmware original esta creado por [NoOne](https://github.com/No0ne) para placas de desarrollo Raspberry Pico, yo lo he adaptado para la RP2040 Zero.
-> **Soporte para Teclado USB y PS/2** 
+> **Soporte para Teclado USB y PS/222** 
 
 > **Repositorio:** [https://github.com/destroyer-dcf/usb2ps2](https://github.com/destroyer-dcf/usb2ps2)
 > **Firmware:** [Version 1.0 - usb2ps2.uf2](https://github.com/destroyer-dcf/usb2ps2/releases/download/1.0/usb2ps2.uf2)
