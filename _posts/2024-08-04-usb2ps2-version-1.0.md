@@ -3,7 +3,7 @@ title: Usb2Ps2 - Convertidor de teclado/raton usb a ps2 para ESPectrum Version 1
 updated: 2025-07-18 20:56
 ---
 
-Esta placa esta diseñada para dar soporte a teclados USB en el emulador [ESPectrum](https://github.com/EremusOne/ESPectrum) creado por [Eremus](https://github.com/EremusOne). El firmware original esta creado por [NoOne](https://github.com/No0ne) para placas de desarrollo Raspberry Pico, yo lo he adaptado para la RP2040 Zero.
+Esta placa esta diseñada para dar soporte a teclados USB en el emulador **[ESPectrum](https://github.com/EremusOne/ESPectrum)** creado por [Eremus](https://github.com/EremusOne). El firmware original esta creado por [NoOne](https://github.com/No0ne) para placas de desarrollo Raspberry Pico, yo lo he adaptado para la RP2040 Zero.
 > **Soporte para Teclado USB y PS/2** 
 
 <!-- > **Repositorio:** [https://github.com/destroyer-dcf/usb2ps2](https://github.com/destroyer-dcf/usb2ps2)
