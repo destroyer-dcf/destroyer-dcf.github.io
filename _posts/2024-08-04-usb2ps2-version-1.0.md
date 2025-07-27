@@ -1,5 +1,5 @@
 ---
-title: Usb2Ps2 - Convertidor de teclado/raton usb a ps2 para ESPectrum Rev 1
+title: Usb2Ps2 - Convertidor de teclado/raton usb a ps2 para ESPectrum (Rev 1)
 updated: 2025-07-18 20:56
 ---
 
