@@ -1,6 +1,6 @@
 # Site Info
 title:              "Destroyer"
-description:        "A minimalist Jekyll theme"
+description:        "mis proyectos y experimentos"
 author_name:        "Destroyer" # change this to your name
 logo_url:           https://avatars0.githubusercontent.com/u/105808314?v=4 # Get it from GitHub API: https://api.github.com/users/destroyer-dcf
 
@@ -25,6 +25,7 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 #   - jekyll-remote-theme
 
 # remote_theme: heiswayi/the-plain
