@@ -9,9 +9,10 @@ Esta placa esta diseñada para dar soporte a teclados USB en el emulador **[ESPe
 <!-- > **Repositorio:** [https://github.com/destroyer-dcf/usb2ps2](https://github.com/destroyer-dcf/usb2ps2)
 > **Firmware:** [Version 1.0 - usb2ps2.uf2](https://github.com/destroyer-dcf/usb2ps2/releases/download/1.0/usb2ps2.uf2) -->
 
-|![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO0.jpg) |![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO1.jpg) |
-|-|-|
-|![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO3.jpg) |![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO4.jpg) |
+![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO0.jpg)
+![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO1.jpg)
+![hw1](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO3.jpg)
+![hw2](https://raw.githubusercontent.com/destroyer-dcf/usb2ps2/main/images/FOTO4.jpg)
 
 <div class="divider"></div>
 ### Esquema y Circuito
