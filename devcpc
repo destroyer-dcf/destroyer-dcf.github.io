@@ -191,7 +191,6 @@ configure_shell() {
             echo "# DevCPC CLI"
             echo "export DEVCPC_PATH=\"$DEVCPC_HOME\""
             echo "export PATH=\"\$PATH:\$DEVCPC_PATH/bin\""
-logo
         } >> "$shell_rc"
         
         success "Configuración añadida a $shell_rc"
@@ -201,6 +200,7 @@ logo
 }
 
 # Main
+logo
 header "DevCPC - Instalador"
 
 # Verificar SO
