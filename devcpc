@@ -56,7 +56,6 @@ logo() {
     echo -e "${YELLOW}▌ ▌▞▀▖▌ ▌▌  ▙▄▘▌  ${NC}"
     echo -e "${YELLOW}▌ ▌▛▀ ▐▐ ▌ ▖▌  ▌ ▖${NC}"
     echo -e "${YELLOW}▀▀ ▝▀▘ ▘ ▝▀ ▘  ▝▀ ${NC}"
-    echo ""
 }
 
 # Detectar OS
@@ -201,7 +200,7 @@ configure_shell() {
 
 # Main
 logo
-header "DevCPC - Instalador"
+header "Instalador"
 
 # Verificar SO
 OS=$(detect_os)
@@ -271,5 +270,5 @@ echo ""
 echo "  3. Para más ayuda:"
 echo -e "     ${CYAN}devcpc help${NC}"
 echo ""
-echo -e "${GREEN}¡Listo para crear tus proyectos para Amstrad CPC! 🎮${NC}"
+echo -e "${GREEN}¡Listo para crear tus proyectos para Amstrad CPC! ${NC}"
 echo ""
