@@ -50,6 +50,15 @@ header() {
     echo ""
 }
 
+logo() {
+    echo ""
+    echo -e "${YELLOW}▛▀▖      ▞▀▖▛▀▖▞▀▖${NC}"
+    echo -e "${YELLOW}▌ ▌▞▀▖▌ ▌▌  ▙▄▘▌  ${NC}"
+    echo -e "${YELLOW}▌ ▌▛▀ ▐▐ ▌ ▖▌  ▌ ▖${NC}"
+    echo -e "${YELLOW}▀▀ ▝▀▘ ▘ ▝▀ ▘  ▝▀ ${NC}"
+    echo ""
+}
+
 # Detectar OS
 detect_os() {
     case "$OSTYPE" in
@@ -182,6 +191,7 @@ configure_shell() {
             echo "# DevCPC CLI"
             echo "export DEVCPC_PATH=\"$DEVCPC_HOME\""
             echo "export PATH=\"\$PATH:\$DEVCPC_PATH/bin\""
+logo
         } >> "$shell_rc"
         
         success "Configuración añadida a $shell_rc"
