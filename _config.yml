@@ -21,8 +21,8 @@ sass:
     style:          :compressed
 
 # Other Params
-include:            [ "robots.txt" ]
-exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
+include:            [ "robots.txt", "devcpc" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script", "install.sh" ]
 plugins:
   - jekyll-sitemap
   # - jekyll-seo-tag
