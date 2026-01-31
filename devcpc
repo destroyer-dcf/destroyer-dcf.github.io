@@ -154,6 +154,12 @@ install_devcpc() {
     # Hacer ejecutable
     chmod +x "$DEVCPC_HOME/bin/devcpc"
     
+    # Crear enlace simbólico para comando cpc
+    if [[ ! -e "$DEVCPC_HOME/bin/cpc" ]]; then
+        ln -s "$DEVCPC_HOME/bin/devcpc" "$DEVCPC_HOME/bin/cpc"
+        success "Enlace simbólico 'cpc' creado"
+    fi
+    
     # Guardar versión instalada
     echo "$version" > "$DEVCPC_HOME/.version"
     
@@ -263,12 +269,15 @@ echo -e "${CYAN}Próximos pasos:${NC}"
 echo ""
 echo "  1. Verifica la instalación:"
 echo -e "     ${CYAN}devcpc version${NC}"
+echo -e "     ${CYAN}cpc version${NC}"
 echo ""
 echo "  2. Crea un nuevo proyecto:"
 echo -e "     ${CYAN}devcpc new mi-juego${NC}"
+echo -e "     ${CYAN}cpc new mi-juego${NC}"
 echo ""
 echo "  3. Para más ayuda:"
 echo -e "     ${CYAN}devcpc help${NC}"
+echo -e "     ${CYAN}cpc help${NC}"
 echo ""
 echo -e "${GREEN}¡Listo para crear tus proyectos para Amstrad CPC! ${NC}"
 echo ""
